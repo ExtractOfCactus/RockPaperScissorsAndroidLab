@@ -35,18 +35,19 @@ public class Game {
         return option;
     }
 
-    public String run(String player, String computer) {
+    public String run(String player) {
+        String computer = this.getOption();
         if (player == computer) {
             return "Draw!";
         }
         else if (player == "Rock") {
-            return computer == "Paper" ? "You lose!" : "You win!";
+            return computer == "Paper" ? "You lose, computer chose paper!" : "You win, computer chose scissors!";
         }
         else if (player == "Paper") {
-            return computer == "Scissors" ? "You lose!" : "You win!";
+            return computer == "Scissors" ? "You lose, computer chose scissors!" : "You win, computer chose rock!";
         }
         else if (player == "Scissors") {
-            return computer == "Rock" ? "You lose!" : "You win!";
+            return computer == "Rock" ? "You lose, computer chose rock!" : "You win, computer chose paper!";
         }
         return null;
     }
