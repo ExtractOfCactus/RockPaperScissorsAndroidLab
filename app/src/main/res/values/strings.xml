@@ -4,4 +4,6 @@
     <string name="rock">Rock</string>
     <string name="paper">Paper</string>
     <string name="scissors">Scissors</string>
+    <string name="rules">Game Rules: Rock beats Scissors, Paper beats Rock, Scissors beats Paper</string>
+    <string name="play">Play</string>
 </resources>
